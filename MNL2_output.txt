@@ -1,0 +1,199 @@
+Model run by zoete using Apollo 0.3.6 on R 4.4.0 for Windows.
+Please acknowledge the use of Apollo by citing Hess & Palma (2019)
+  DOI 10.1016/j.jocm.2019.100170
+  www.ApolloChoiceModelling.com
+
+Model name                                  : MNL2
+Model description                           : Full MNL
+Model run at                                : 2026-01-04 14:30:11.277369
+Estimation method                           : bgw
+Estimation diagnosis                        : Relative function convergence
+Optimisation diagnosis                      : Maximum found
+     hessian properties                     : Negative definite
+     maximum eigenvalue                     : -540.219701
+     reciprocal of condition number         : 1.15405e-11
+Number of individuals                       : 10000
+Number of rows in database                  : 10000
+Number of modelled outcomes                 : 10000
+
+Number of cores used                        :  1 
+Model without mixing
+
+LL(start)                                   : -10986.12
+LL at equal shares, LL(0)                   : -10986.12
+LL at observed shares, LL(C)                : -10949.4
+LL(final)                                   : -5355.99
+Rho-squared vs equal shares                  :  0.5125 
+Adj.Rho-squared vs equal shares              :  0.5119 
+Rho-squared vs observed shares               :  0.5108 
+Adj.Rho-squared vs observed shares           :  0.5105 
+AIC                                         :  10723.99 
+BIC                                         :  10767.25 
+
+Estimated parameters                        : 6
+Time taken (hh:mm:ss)                       :  00:00:1.74 
+     pre-estimation                         :  00:00:0.96 
+     estimation                             :  00:00:0.26 
+     post-estimation                        :  00:00:0.52 
+Iterations                                  :  8  
+
+Unconstrained optimisation.
+
+Estimates:
+                  Estimate        s.e.   t.rat.(0)    Rob.s.e. Rob.t.rat.(0)
+asc1               0.00000          NA          NA          NA            NA
+asc2              -0.31601     0.03539      -8.928     0.03520        -8.978
+asc3              -0.35161     0.03559      -9.880     0.03557        -9.885
+b_price         -1.040e-05   2.087e-07     -49.855   2.092e-07       -49.721
+b_size             0.02997  5.2969e-04      56.585  5.3031e-04        56.519
+b_ldist           -0.32662     0.02331     -14.015     0.02368       -13.795
+b_price_lowInc  -4.668e-06   3.572e-07     -13.068   3.569e-07       -13.078
+
+
+Overview of choices for MNL model component :
+                                     Alt1     Alt2    Alt3
+Times available                  10000.00 10000.00 10000.0
+Times chosen                      3734.00  3196.00  3070.0
+Percentage chosen overall           37.34    31.96    30.7
+Percentage chosen when available    37.34    31.96    30.7
+
+
+
+Classical covariance matrix:
+                         asc2           asc3        b_price         b_size        b_ldist b_price_lowInc
+asc2                 0.001253     5.9051e-04      6.066e-10     -1.883e-06      1.411e-05      1.307e-10
+asc3               5.9051e-04       0.001266      5.914e-10     -1.784e-06      3.610e-05      3.649e-10
+b_price             6.066e-10      5.914e-10      4.354e-14     -6.090e-11      7.210e-10     -2.421e-14
+b_size             -1.883e-06     -1.784e-06     -6.090e-11      2.806e-07     -2.021e-06     -2.699e-11
+b_ldist             1.411e-05      3.610e-05      7.210e-10     -2.021e-06     5.4316e-04      2.772e-10
+b_price_lowInc      1.307e-10      3.649e-10     -2.421e-14     -2.699e-11      2.772e-10      1.276e-13
+
+Robust covariance matrix:
+                         asc2           asc3        b_price         b_size        b_ldist b_price_lowInc
+asc2                 0.001239     5.7721e-04      6.645e-10     -1.887e-06      1.051e-05     -2.599e-10
+asc3               5.7721e-04       0.001265      6.768e-10     -1.853e-06      6.399e-06      2.144e-10
+b_price             6.645e-10      6.768e-10      4.377e-14     -6.173e-11      7.200e-10     -2.388e-14
+b_size             -1.887e-06     -1.853e-06     -6.173e-11      2.812e-07     -2.091e-06     -2.842e-11
+b_ldist             1.051e-05      6.399e-06      7.200e-10     -2.091e-06     5.6063e-04      1.326e-10
+b_price_lowInc     -2.599e-10      2.144e-10     -2.388e-14     -2.842e-11      1.326e-10      1.274e-13
+
+Classical correlation matrix:
+                         asc2           asc3        b_price         b_size        b_ldist b_price_lowInc
+asc2                  1.00000        0.46882        0.08214       -0.10044        0.01710        0.01034
+asc3                  0.46882        1.00000        0.07965       -0.09464        0.04353        0.02870
+b_price               0.08214        0.07965        1.00000       -0.55104        0.14827       -0.32481
+b_size               -0.10044       -0.09464       -0.55104        1.00000       -0.16370       -0.14268
+b_ldist               0.01710        0.04353        0.14827       -0.16370        1.00000        0.03330
+b_price_lowInc        0.01034        0.02870       -0.32481       -0.14268        0.03330        1.00000
+
+Robust correlation matrix:
+                         asc2           asc3        b_price         b_size        b_ldist b_price_lowInc
+asc2                  1.00000       0.461003        0.09023       -0.10106       0.012607       -0.02068
+asc3                  0.46100       1.000000        0.09094       -0.09824       0.007598        0.01689
+b_price               0.09023       0.090935        1.00000       -0.55633       0.145341       -0.31980
+b_size               -0.10106      -0.098244       -0.55633        1.00000      -0.166551       -0.15018
+b_ldist               0.01261       0.007598        0.14534       -0.16655       1.000000        0.01569
+b_price_lowInc       -0.02068       0.016888       -0.31980       -0.15018       0.015693        1.00000
+
+ 20 most extreme outliers in terms of lowest average per choice prediction:
+  row Avg prob per choice
+ 7978        0.0005686259
+ 2640        0.0011647818
+ 7628        0.0021719095
+ 7745        0.0021970301
+  113        0.0038127396
+ 3857        0.0040535682
+ 2345        0.0046079774
+ 5561        0.0047932921
+ 8787        0.0048291657
+  747        0.0052171363
+ 4068        0.0053674586
+ 4419        0.0065226651
+ 7211        0.0072630384
+ 5107        0.0075127063
+ 7371        0.0085158454
+ 8716        0.0096176399
+ 6571        0.0097955544
+ 9325        0.0102817134
+ 8629        0.0103229559
+ 3414        0.0104449681
+
+Settings and functions used in model definition:
+
+apollo_control
+--------------
+                       Value                      
+modelName              "MNL2"                     
+modelDescr             "Full MNL"                 
+indivID                "ID"                       
+debug                  "FALSE"                    
+nCores                 "1"                        
+workInLogs             "FALSE"                    
+seed                   "13"                       
+mixing                 "FALSE"                    
+HB                     "FALSE"                    
+noValidation           "FALSE"                    
+noDiagnostics          "FALSE"                    
+calculateLLC           "TRUE"                     
+analyticHessian        "FALSE"                    
+memorySaver            "FALSE"                    
+outputDirectory        "C:/Users/zoete/Downloads/"
+panelData              "FALSE"                    
+analyticGrad           "TRUE"                     
+analyticGrad_manualSet "FALSE"                    
+overridePanel          "FALSE"                    
+preventOverridePanel   "FALSE"                    
+noModification         "FALSE"                    
+
+Hessian routines attempted
+--------------------------
+numerical jacobian of LL analytical gradient
+
+Scaling used in computing Hessian
+---------------------------------
+                      Value
+asc2           3.160096e-01
+asc3           3.516098e-01
+b_price        1.040284e-05
+b_size         2.997265e-02
+b_ldist        3.266210e-01
+b_price_lowInc 4.667757e-06
+
+
+apollo_probabilities
+----------------------
+function(apollo_beta, apollo_inputs, functionality="estimate"){
+  apollo_attach(apollo_beta, apollo_inputs)
+  on.exit(apollo_detach(apollo_beta, apollo_inputs))
+  P = list()
+  V = list()
+  
+  # Base Alternative (Apartment)
+  V[['Alt1']]  = asc1 + 
+    b_price * Price1 + b_price_lowInc * Price1_lowInc +
+    b_size  * Size1 + 
+    b_ldist * logDistance1
+  
+  # Alternative 2 (Townhouse)
+  V[['Alt2']]  = asc2 + 
+    b_price * Price2 + b_price_lowInc * Price2_lowInc +
+    b_size  * Size2 + 
+    b_ldist * logDistance2
+  
+  # Alternative 3 (Single House)
+  V[['Alt3']]  = asc3 + 
+    b_price * Price3 + b_price_lowInc * Price3_lowInc +
+    b_size  * Size3 + 
+    b_ldist * logDistance3
+  
+  mnl_settings = list(
+    alternatives  = c(Alt1=1, Alt2=2, Alt3=3), 
+    avail         = list(Alt1=1, Alt2=1, Alt3=1), 
+    choiceVar     = choice,
+    V             = V
+  )
+  
+  P[['model']] = apollo_mnl(mnl_settings, functionality)
+  P = apollo_prepareProb(P, apollo_inputs, functionality)
+  return(P)
+}
